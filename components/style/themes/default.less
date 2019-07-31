@@ -1,0 +1,26 @@
+@import '../color/colors';
+
+// -------- Colors -----------
+@primary-color: @blue-6;
+@black: #000;
+
+@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+'Segoe UI Emoji', 'Segoe UI Symbol';
+@code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+@text-color: fade(@black, 65%);
+@font-size-base: 14px;
+@line-height-base: 1.5;
+@border-radius-sm: 2px;
+
+// Border color
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-split: hsv(0, 0, 91%); // split border inside a component
+
+// Shadow
+@shadow-color: rgba(0, 0, 0, 0.15);
+@box-shadow-base: @shadow-1-down;
+@shadow-1-down: 0 2px 8px @shadow-color;
+
+// Extra large screen / full hd
+@screen-xl: 1200px;

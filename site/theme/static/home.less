@@ -1,0 +1,137 @@
+@home-bg-color: #2f54eb;
+@home-text-color: #314659;
+
+.home-page-wrapper {
+  position: relative; // will-change: transform;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  color: @home-text-color;
+  font-family: Avenir, @font-family, sans-serif;
+
+  .page {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    h2 {
+      margin: 140px auto 100px;
+      color: @home-text-color;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 46px;
+      text-align: center;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      will-change: transform;
+    }
+  }
+}
+
+.banner-bg {
+  &-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  position: absolute;
+  bottom: -200px;
+  left: 0%;
+  width: 120%;
+  height: 200px;
+  background: @home-bg-color;
+  transform: rotate(-4deg);
+  transform-origin: 0;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  height: 576px;
+  &-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: initial;
+  }
+  .text-wrapper {
+    width: 54%;
+    min-width: 420px;
+    max-width: 560px;
+    min-height: 336px;
+    color: #0d1a26;
+    > * {
+      will-change: transform;
+    }
+    h1 {
+      margin: 8px 0 28px;
+      font-weight: 600;
+      font-size: 50px;
+      font-family: Avenir, @font-family, sans-serif;
+      line-height: 76px;
+      letter-spacing: 0;
+    }
+    p {
+      color: @home-text-color;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  .img-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 26px;
+    width: 46%;
+    max-width: 482px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .banner-btns {
+    display: flex;
+    align-items: center;
+    min-width: 520px;
+    margin-top: 24px;
+  }
+
+  .banner-btn {
+    display: inline-block;
+    height: 40px;
+    padding: 0 24px;
+    font-size: 16px;
+    font-family: @font-family;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #2f54eb;
+    border-radius: 100px;
+  }
+
+  .banner-btn.components {
+    color: #fff;
+    background: #2f54eb;
+  }
+
+  .banner-btn.language {
+    color: #2f54eb;
+  }
+}
+
+svg {
+  display: block;
+  g {
+    transform-origin: 50%;
+    transform-box: fill-box;
+  }
+}
